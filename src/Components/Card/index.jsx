@@ -7,7 +7,6 @@ import React from 'react';
 
 function Card(props) {
     return ( 
-      <div className='cards-container'>
     <Link
         to={`/FicheLogement/${props.id}`}
         key={`${props.title}-${props.index}`}
@@ -22,7 +21,6 @@ function Card(props) {
             </div>
           </div>
         </Link>
-      </div>
     );
   }
   export default Card

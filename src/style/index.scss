@@ -540,7 +540,7 @@ width: 100%;
             font-size: 12px;
         }
     } 
-    }
+    
     .ficheLogement-container{
         max-width: 844px;
         h1{
@@ -693,14 +693,13 @@ width: 100%;
     .slider-container {
         max-width: 844px; /* Ajustement de la hauteur pour une meilleure expérience sur des écrans plus petits */
     }
-
-    .cards-container {
-      flex-direction: column; /* Ajustement pour empiler les cartes sur des écrans plus petits */
-      margin: 15px; /* Réduction de la marge pour un meilleur espacement sur des écrans plus petits */
+    .cards-container{
+        flex-direction: column;
+        background-color: white;
     }
 
   
-  
+  }
   
 
 

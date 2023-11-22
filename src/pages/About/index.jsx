@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from '../../Components/Paysage'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../../Components/Footer/footer';
+import Paysage2 from '../../assets/paysage2.png'
 
 
 function About() {
@@ -16,7 +16,9 @@ function About() {
     
     return (
       <div>
-        <Image />
+        <div className="paysage-container">
+        <img src={Paysage2} alt='Logo' className="paysage-image" />
+        </div>
         <div className='about'>
         {fiabiliteOpen ? (
           <div className='fiabilite-open' onClick={() => setFiabiliteOpen(false)}>
