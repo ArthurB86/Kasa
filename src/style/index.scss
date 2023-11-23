@@ -316,7 +316,6 @@ gap: 10px;
     max-height: 1552px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: 32px;
     margin-top: 10px;   
 }   
@@ -333,6 +332,10 @@ gap: 10px;
         background-color: #F6F6F6;
         border-radius: 5px;
         width: 100%;
+        height: 100%; 
+        display: flex;
+        justify-content:center;
+        justify-content: center;
     }
     p{
         color: $textcolor;
@@ -345,6 +348,7 @@ gap: 10px;
         align-items: center;
         gap: 350px;
         color: white;
+        height: 50px;
         p{
             color: white;
             font-size: 24px;
@@ -361,6 +365,7 @@ gap: 10px;
         align-items: center;
         gap: 350px;
         color: white;
+        height: 50px;
         p{
             color: white;
         }
@@ -659,12 +664,12 @@ width: 100%;
     }
     .about{
         width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin: 0;
-
     }
 
     .fiabilite-open, .respect-open, .service-open, .securite-open {

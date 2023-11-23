@@ -75,7 +75,7 @@ function About() {
           </div>
         )}
       </div> 
-        <div><Footer></Footer></div>
+      <Footer></Footer>
       </div>
     );
   }
