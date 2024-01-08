@@ -8,7 +8,7 @@ function Error() {
     <p className='error-num'>404</p>
     <p className='error-phrase'>Oups! La page que vous demandez n'existe pas.
     </p>
-    <Link to="/">Retourner sur la page d'acceuil</Link>
+    <Link to="/" className='link-error'>Retourner sur la page d'accueil</Link>
     <Footer></Footer>
     </div>
     )

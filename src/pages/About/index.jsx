@@ -22,18 +22,26 @@ function About() {
         <div className='about'>
         {fiabiliteOpen ? (
           <div className='fiabilite-open' onClick={() => setFiabiliteOpen(false)}>
-          <p>Fiabilite</p>
+          <p>Fiabilité</p>
           <FontAwesomeIcon icon={faChevronUp} className='icon'/>
         </div>
         ) : (
-          <div className='fiabilite-close' onClick={() => setFiabiliteOpen(true)}>
-          
-          <p>
+          <div className='fiabilite-close about-container' onClick={() => setFiabiliteOpen(true)}>
+          <div className='titre-About-Close'>
+          <div className='titre-About'>
+            Fiabilité
+            </div> 
+            <FontAwesomeIcon icon={faChevronDown} className='icon'/>
+           </div>
+          <div className='fond-bleu'>
+            <div className='fond-txt'>
+              <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont
             régulièrement vérifiées par nos équipes.
           </p>
-          <FontAwesomeIcon icon={faChevronDown} className='icon'/>
-        </div>
+            </div>
+          </div>
+          </div>    
         )}
   
         {respectOpen ? (
@@ -42,12 +50,22 @@ function About() {
           <FontAwesomeIcon icon={faChevronUp} className='icon'/>
           </div>
         ) : (
-          <div className='respect-close' onClick={() => setRespectOpen(true)}> 
-          
-          <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
-             perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
-          <FontAwesomeIcon icon={faChevronDown} className='icon'/>
+          <div className='respect-close about-container' onClick={() => setRespectOpen(true)}>
+          <div className='titre-About-Close'>
+          <div className='titre-About'>
+          Respect
+            </div> 
+            <FontAwesomeIcon icon={faChevronDown} className='icon'/>
+           </div>
+          <div className='fond-bleu'>
+            <div className='fond-txt'>
+              <p>
+              La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de
+             perturbation du voisinage entraînera une exclusion de notre plateforme.
+          </p>
+            </div>
           </div>
+          </div> 
         )}
         {serviceOpen ? (
           <div className='service-open' onClick={() => setServiceOpen(false)}> 
@@ -55,10 +73,21 @@ function About() {
           <FontAwesomeIcon icon={faChevronUp} className='icon'/>
           </div>
         ) : (
-          <div className='service-close' onClick={() => setServiceOpen(true)}>       
-          <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
-          <FontAwesomeIcon icon={faChevronDown} className='icon'/> 
+          <div className='service-close about-container' onClick={() => setServiceOpen(true)}>
+          <div className='titre-About-Close'>
+          <div className='titre-About'>
+          Service
+            </div> 
+            <FontAwesomeIcon icon={faChevronDown} className='icon'/>
+           </div>
+          <div className='fond-bleu'>
+            <div className='fond-txt'>
+              <p>
+              Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.
+          </p>
+            </div>
           </div>
+          </div> 
         )}
         {securiteOpen ? (
           <div className='securite-open' onClick={() => setSecuriteOpen(false)}>
@@ -66,13 +95,22 @@ function About() {
             <FontAwesomeIcon icon={faChevronUp} className='icon'/>
           </div>
         ) : (
-          <div className='securite-close' onClick={() => setSecuriteOpen(true)}>
-          <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement
+          <div className='securite-close about-container' onClick={() => setSecuriteOpen(true)}>
+          <div className='titre-About-Close'>
+          <div className='titre-About'>
+          Service
+            </div> 
+            <FontAwesomeIcon icon={faChevronDown} className='icon'/>
+           </div>
+          <div className='fond-bleu'>
+            <div className='fond-txt'>
+            <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement
              correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au
              locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons
              également des ateliers sur la sécurité domestique pour nos hôtes.</p>
-             <FontAwesomeIcon icon={faChevronDown} className='icon'/>
+            </div>
           </div>
+          </div> 
         )}
       </div> 
       <Footer></Footer>

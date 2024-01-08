@@ -38,6 +38,7 @@ function FicheLogement() {
   }
 
   return (
+    <div>
     <div className='ficheLogement-container'>   
     <Slider images={logementData.pictures} />
       <div className='test'>
@@ -61,8 +62,8 @@ function FicheLogement() {
         </div>
       </div>
         <div className="rating-stars">{generateRatingStars()}</div>
+      </div> 
       </div>
-      
       </div>
       <div className='menu-ouvrant'>
       {descriptionOpen ? (
@@ -81,7 +82,8 @@ function FicheLogement() {
             <div className='fond-txt'>
             <p>
             {logementData.description}
-          </p></div>
+          </p>
+          </div>
           </div>
          
         </div>
@@ -109,9 +111,10 @@ function FicheLogement() {
           </div>
         )}
       </div>
-    <Footer></Footer>
-    </div>
-
+  
+    
+      <Footer></Footer>
+</div>
   );
 }
 
